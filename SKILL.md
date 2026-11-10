@@ -10,7 +10,7 @@ Force deliberate file selection. AI agents over-read because more context feels 
 ## Core Rules
 
 1. **Before opening any file**, list the exact files needed and why each one is required.
-2. Discover candidates via file tree, directory listing, or search tools only. Do not open content yet.
+2. Discover candidates via file tree, directory listing, or search tools only. Do **not** open content yet.
 3. Present the list to the user and wait for explicit approval.
 4. After approval, make the **smallest, highest-confidence change** that fully solves the problem.
 5. If a needed file is not on the approved list, **do not open it**. Summarize what is still needed in one line and stop.
@@ -20,7 +20,7 @@ Force deliberate file selection. AI agents over-read because more context feels 
 ### Phase 1 — Discover and Justify
 
 - Use `ls`, `find`, `tree`, or search tools to locate candidate files.
-- Output a numbered list in this format:
+- Output a numbered list in this exact format:
 
 ```
 Proposed files to open:
