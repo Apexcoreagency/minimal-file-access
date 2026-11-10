@@ -15,14 +15,24 @@ This skill cuts that behavior by requiring justification and explicit approval f
 
 ## Installation
 
-Copy the `SKILL.md` into your Grok skills directory:
+### For Grok / local skills directory
 
 ```bash
 mkdir -p ~/.grok/skills/minimal-file-access
 cp SKILL.md ~/.grok/skills/minimal-file-access/
 ```
 
-Or place the whole folder under `/home/workdir/.grok/skills/` (or your equivalent user skills path).
+Or clone the whole repo:
+
+```bash
+git clone https://github.com/Apexcoreagency/minimal-file-access.git ~/.grok/skills/minimal-file-access
+```
+
+On some setups the skills path is `/home/workdir/.grok/skills/` — use whichever matches your environment.
+
+### Verify
+
+After installing, the skill should appear in your available skills list and trigger automatically on multi-file editing tasks.
 
 ## When it triggers
 
@@ -42,4 +52,4 @@ After you say “yes” or “approved”, it proceeds with the minimal edit.
 
 ## License
 
-MIT (or whatever you prefer — feel free to change)
+MIT
